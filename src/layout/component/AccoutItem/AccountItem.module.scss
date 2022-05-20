@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+
+    .avatar {
+        height: 45px;
+        width: 45px;
+        border-radius: 30px;
+        margin: 0 18px 0 8px;
+    }
+    .info {
+        flex-grow: 2;
+        .check {
+            color: #2ed8ed;
+            margin-left: 12px;
+        }
+        .userName {
+            color: #c8c4c1;
+            font-weight: 300;
+        }
+    }
+}

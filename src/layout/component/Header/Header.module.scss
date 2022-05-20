@@ -1,0 +1,70 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    .inner {
+        width: 1150px;
+        padding: 0 24px 0 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            display: flex;
+            align-items: center;
+            img {
+                margin: auto 0;
+            }
+        }
+        .activeLogin {
+            display: flex;
+            flex-basis: auto;
+
+            &:not(:first-child) {
+                margin-left: 16px;
+                padding-left: 3px;
+            }
+        }
+    }
+}
+.action {
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+
+    .action-btn {
+        position: relative;
+        font-size: 2.2rem;
+        color: #161823;
+        background-color: transparent;
+        padding: 4px 10px;
+        cursor: pointer;
+    }
+}
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    padding: 0px 6px;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'ProximaNova', sans-serif;
+    background-color: var(--primary);
+    user-select: none;
+}
+.btnMoreIcon {
+    padding-left: 10px;
+    .moreIcon {
+        width: 20px;
+        height: 20px;
+        margin-top: 4px;
+        margin-bottom: auto;
+        position: relative;
+    }
+}

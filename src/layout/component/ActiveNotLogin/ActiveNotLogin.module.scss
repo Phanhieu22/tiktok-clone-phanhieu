@@ -1,0 +1,61 @@
+.ActiveNotLogin {
+    display: flex;
+    flex-basis: auto;
+    font-size: 16px;
+    .login,
+    .moreIcon {
+        margin-left: 16px;
+    }
+    .upload {
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 22px;
+        display: block;
+    }
+    .login {
+        background-color: var(--primary);
+        width: 90px;
+        padding: 6px 8px;
+        border-radius: 4px;
+        height: 36px;
+        user-select: none;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 16px;
+        min-width: 100px;
+        color: rgba(255, 255, 255, 1);
+        &:hover {
+            background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.12),
+                    rgba(0, 0, 0, 0.12)
+                ),
+                #fe2c55;
+        }
+        &:active {
+            background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.12),
+                    rgba(0, 0, 0, 0.12)
+                ),
+                #f32a52;
+        }
+    }
+    .moreIcon {
+        width: 20px;
+        height: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+    }
+}
+.custom {
+    background-color: black;
+}
+.memuItems {
+    width: 223px;
+}

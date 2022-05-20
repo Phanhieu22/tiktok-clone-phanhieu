@@ -56,7 +56,7 @@ const MENU_ITEMS = [
 ];
 function Header() {
     const cx = className.bind(styles);
-    const currentUser = true;
+    const currentUser = false;
 
     const userMenu = [
         {
@@ -82,7 +82,10 @@ function Header() {
             separate: true,
         },
     ];
-
+    // sử lý logic
+    const handleOnchange = (menuItem) => {
+        console.log(menuItem);
+    };
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -131,8 +134,8 @@ function Header() {
                     )}
                     <Menu
                         items={currentUser ? userMenu : MENU_ITEMS}
-
-                        // onChange={handleMenuChange}
+                        onChange={handleOnchange}
+                        // onChange={handleMenuChange} asdfasdf
                     >
                         {currentUser ? (
                             <Image

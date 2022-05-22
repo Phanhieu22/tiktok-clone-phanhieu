@@ -92,8 +92,9 @@ function Header() {
                 <div className={cx('logo')}>
                     <img src={images.logo} alt="tiktok" />
                 </div>
-
+                {/* search */}
                 <Search />
+                {/* action */}
                 <div className={cx('action')}>
                     {currentUser ? (
                         <>
@@ -149,6 +150,7 @@ function Header() {
                         )}
                     </Menu>
                 </div>
+                __
             </div>
         </div>
     );

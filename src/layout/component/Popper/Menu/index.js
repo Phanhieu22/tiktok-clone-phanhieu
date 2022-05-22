@@ -66,6 +66,9 @@ function Menu({ children, items, onChange }) {
                         </WrapperPopper>
                     </div>
                 )}
+                onHide={() => {
+                    sethistory((prev) => prev.slice(0, 1));
+                }}
             >
                 {children}
             </Tippy>

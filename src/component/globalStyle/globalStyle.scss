@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
     --primary: rgba(254, 44, 85, 1);
@@ -7,7 +6,27 @@
     --white: white;
     --default-horizontal-padding: 24px;
 }
-
+//@at-root fonts  embeded
+@font-face {
+    font-family: proximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: proximaNova;
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: proximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Bold.woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: sofiapro;
+    src: url('/assets/fonts/sofiapro-bold.woff');
+    font-weight: 700;
+}
 html {
     font-size: 62.5%;
 }
@@ -29,7 +48,7 @@ a[href] {
     transition: color 250ms ease 0s;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'proximaNova', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;

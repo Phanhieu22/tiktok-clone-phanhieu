@@ -9,7 +9,7 @@ import {
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Tippy from '@tippyjs/react/headless';
+import Tippy from '@tippyjs/react';
 import className from 'classnames/bind';
 import images from '~/assets/images';
 import Button from '~/component/Button';
@@ -56,7 +56,7 @@ const MENU_ITEMS = [
 ];
 function Header() {
     const cx = className.bind(styles);
-    const currentUser = false;
+    const currentUser = true;
 
     const userMenu = [
         {
@@ -135,13 +135,12 @@ function Header() {
                     <Menu
                         items={currentUser ? userMenu : MENU_ITEMS}
                         onChange={handleOnchange}
-                        // onChange={handleMenuChange} asdfasdf
                     >
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png"
-                                alt="Nguyen Van A"
+                                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ea0854578085ab26effc2c7b8cefa270~c5_100x100.jpeg?x-expires=1653148800&x-signature=N%2BfLVM2orrPmERR0Y278WdqHNGo%3D"
+                                alt="nguyen van a"
                             />
                         ) : (
                             <button className={cx('btnMoreIcon')}>

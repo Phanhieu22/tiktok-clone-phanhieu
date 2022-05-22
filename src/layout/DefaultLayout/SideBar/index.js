@@ -8,6 +8,7 @@ function SideBar() {
         <aside className={cx('wrapper')}>
             <div className={cx('content')}>
                 <h2>sidebar</h2>
+            
             </div>
         </aside>
     );

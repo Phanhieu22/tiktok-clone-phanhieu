@@ -6,7 +6,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 function AccountItem() {
     const linkimg =
-        'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ea0854578085ab26effc2c7b8cefa270~c5_100x100.jpeg?x-expires=1653116400&x-signature=%2FJmm58leePO2iXzItTHEbO8cRG4%3D';
+    'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ea0854578085ab26effc2c7b8cefa270~c5_100x100.jpeg?x-expires=1653292800&x-signature=njKssr7HCcQs5Shy7UK%2B9x2hwvI%3D'
     const cx = className.bind(styles);
     return (
         <div className={cx('wrapper')}>
